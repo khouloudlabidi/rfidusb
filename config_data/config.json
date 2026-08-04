@@ -1,0 +1,9 @@
+{
+    "wifi": {
+        "ssid": "Diva AP",
+        "password": "Diva@2024"
+    },
+    "server": {
+        "url": "http://192.168.1.50/api"
+    }
+}
