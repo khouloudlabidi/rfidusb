@@ -32,7 +32,7 @@ cmd = [
     PORT,
 
     "--baud",
-    "460800",
+    "115200",
 
     "write-flash",
 
