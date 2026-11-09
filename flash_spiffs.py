@@ -1,9 +1,22 @@
 import subprocess
 from pathlib import Path
+import argparse
 
+#PORT = "COM17"
+# Parse command-line arguments
+parser = argparse.ArgumentParser(
+    description="Flash SPIFFS to ESP32"
+)
 
-PORT = "COM8"
+parser.add_argument(
+    "--port",
+    required=True,
+    help="ESP32 COM port (e.g. COM17)"
+)
 
+args = parser.parse_args()
+
+PORT = args.port
 SPIFFS_BIN = Path(
     "config_build/spiffs.bin"
 )
